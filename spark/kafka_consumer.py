@@ -42,7 +42,7 @@ structured_data_stream = raw_data_stream.select(
 ).select("data.*")
 
 # Define the Delta Lake storage path
-delta_path = "../Time-Series-Forecasting-Spark-Kafka-for-Weather-Data-main/delta_lake/delta_lake_table_4"  # Replace with your actual Delta Lake storage path
+delta_path = "../Time-Series-Forecasting-Spark-Kafka-for-Weather-Data-main/delta_lake/delta_lake_table_4"  
 
 # Write the streaming DataFrame to Delta Lake
 query = structured_data_stream.writeStream \
