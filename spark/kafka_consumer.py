@@ -20,11 +20,10 @@ json_schema = StructType([
     StructField("longitude", DoubleType(), True),
     StructField("temp_c", DoubleType(), True),
     StructField("wind_mph", DoubleType(), True),
-    StructField("humidity", DoubleType(), True),
     StructField("precip_mm", DoubleType(), True),
     StructField("condition", StringType(), True),
 ])
-
+#StructField("humidity", DoubleType(), True),
 
 # Read data from Kafka topic as a streaming DataFrame
 raw_data_stream = spark.readStream \
