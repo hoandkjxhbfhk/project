@@ -32,7 +32,7 @@ def fetch_filter_and_publish():
             'latitude': data['location']['lat'],
             'longitude': data['location']['lon'],
             'timezone': data['location']['tz_id'],
-            'temp_c': data['current']['temp_c'],  # Access current weather data
+            'temp_c': data['current']['temp_c'],  
             'wind_mph': data['current']['wind_mph'],
             'humidity': data['current']['humidity'],
             'precip_mm': data['current']['precip_mm']
